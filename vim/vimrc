@@ -53,3 +53,4 @@ map f :Files<CR>
 map h :History<CR>
 colorscheme koehler 
 set pastetoggle=<F3>
+set belloff=all
