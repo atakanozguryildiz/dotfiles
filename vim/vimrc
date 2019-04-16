@@ -26,8 +26,14 @@ Plugin 'VundleVim/Vundle.vim'
 " " All of your Plugins must be added before the following line
 set rtp+=~/.fzf
 Plugin 'junegunn/fzf.vim'
-
 Plugin 'davidhalter/jedi-vim'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'ervandew/supertab'
+Plugin 'Raimondi/delimitMate'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -44,13 +50,16 @@ filetype plugin indent on    " required
 " "
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
-Plugin 'itchyny/lightline.vim'
 
+"autocmd BufWritePost *.py call Flake8()
 let mapleader = "\<Space>"
 set statusline+=%f
 set laststatus=2
 map f :Files<CR>
 map h :History<CR>
-colorscheme koehler 
+map é :Gblame<CR>
+colorscheme torte 
 set pastetoggle=<F3>
 set belloff=all
+syntax on
+nmap <F8> :TagbarToggle<CR>
