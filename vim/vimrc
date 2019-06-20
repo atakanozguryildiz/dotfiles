@@ -34,6 +34,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -61,5 +62,6 @@ map é :Gblame<CR>
 colorscheme torte 
 set pastetoggle=<F3>
 set belloff=all
+set mouse=a
 syntax on
 nmap <F8> :TagbarToggle<CR>
