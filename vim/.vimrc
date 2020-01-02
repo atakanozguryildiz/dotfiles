@@ -58,11 +58,11 @@ let mapleader = "\<Space>"
 set statusline+=%f
 set laststatus=2
 map f :Files<CR>
-map h :History<CR>
 map é :Gblame<CR>
-colorscheme torte 
+colorscheme desert
 set pastetoggle=<F3>
 set belloff=all
 set mouse=a
+set clipboard=unnamedplus
 syntax on
 nmap <F8> :TagbarToggle<CR>
